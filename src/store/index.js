@@ -1,5 +1,11 @@
 import {createStore} from 'vuex';
 
-const store = createStore();
+import coachesModule from './modules/coaches/index.js'
+
+const store = createStore({
+    modules: {
+        coaches: coachesModule
+    }
+});
 
 export default store;
