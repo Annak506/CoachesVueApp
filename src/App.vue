@@ -15,5 +15,18 @@ export default{
 }
 </script>
 
-<!-- went back in time in terms of commits and now at the video
-     Working on the main layout and styling -->
+<style >
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+</style>
