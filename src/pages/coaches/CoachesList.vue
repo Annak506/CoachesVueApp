@@ -3,10 +3,11 @@
         <section>
             FILTER
         </section>
+        <base-card>
         <section>
             <div class="controls">
-                <button>Refresh</button> 
-                <router-link to="/register">Register as a coach</router-link> 
+                <base-button mode="outline">Refresh</base-button> 
+                <base-button link to="/register">Register as a coach</base-button> 
 
             </div>
             <ul v-if="hasCoaches"> 
@@ -15,6 +16,8 @@
         </ul>
         <h3 v-else>No coaches found.</h3>
         </section>
+    </base-card>
+        
     </div>
 </template>
 
