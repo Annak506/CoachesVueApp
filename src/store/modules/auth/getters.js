@@ -1,7 +1,5 @@
-export default{
-    getters:{
-        userId(state){
-            return state.userId;
-        }
+export default {
+    userId(state) {
+        return state.userId;
     }
-}
+};
