@@ -115,58 +115,63 @@ export default{
 }</script>
 
 <style scoped>
-    .form-control {
-  margin: 0.5rem 0;
+.form-control {
+  margin: 1rem 0;
 }
 
 label {
   font-weight: bold;
   display: block;
   margin-bottom: 0.5rem;
-}
-
-input[type='checkbox'] + label {
-  font-weight: normal;
-  display: inline;
-  margin: 0 0 0 0.5rem;
+  color: #333;
 }
 
 input,
 textarea {
   display: block;
   width: 100%;
-  border: 1px solid #ccc;
+  border: 2px solid #D4AF37;
+  border-radius: 16px;
   font: inherit;
+  padding: 1.2rem;
+  background-color: #F9F9F9;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 input:focus,
 textarea:focus {
-  background-color: #f0e6fd;
+  background-color: #FFFBE6;
+  border-color: #D4AF37;
   outline: none;
-  border-color: #3d008d;
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
 }
 
-input[type='checkbox'] {
-  display: inline;
-  width: auto;
-  border: none;
-}
-
-input[type='checkbox']:focus {
-  outline: #3d008d solid 1px;
-}
-
-h3 {
-  margin: 0.5rem 0;
-  font-size: 1rem;
-}
-
-.invalid label {
-  color: red;
+input:hover,
+textarea:hover {
+  background-color: #FFFFFF;
+  border-color: #D4AF37;
 }
 
 .invalid input,
 .invalid textarea {
-  border: 1px solid red;
+  border-color: red;
+  background-color: #FFE6E6;
+}
+
+.base-button {
+  padding: 0.7rem 1.5rem;
+  background-color: #D4AF37;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.base-button:hover {
+  background-color: #B48C2D;
 }
 </style>

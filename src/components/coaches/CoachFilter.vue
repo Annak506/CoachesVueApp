@@ -45,22 +45,72 @@ export default{
 
 <style scoped>
 h2 {
-  margin: 0.5rem 0;
+  font-size: 1.5rem;
+  font-family: 'Playfair Display', serif;
+  color: #3f3e3e;
+  margin-bottom: 1rem;
 }
 
 .filter-option {
-  margin-right: 1rem;
+  display: inline-block;
+  margin-right: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+  position: relative; /* To position the custom checkbox */
 }
 
-.filter-option label,
 .filter-option input {
-  vertical-align: middle;
+  /* Hide the default checkbox entirely */
+  display: none;
 }
 
 .filter-option label {
-  margin-left: 0.25rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid #D4AF37;
+  border-radius: 12px;
+  background-color: #F8F1EB;
+  color: #D4AF37;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.filter-option.active label {
-  font-weight: bold;
-}</style>
+.filter-option label::before {
+  content: ''; /* Empty content for the custom checkbox */
+  width: 16px;
+  height: 16px;
+  border: 2px solid #D4AF37;
+  border-radius: 50%;
+  background-color: #F8F1EB;
+  margin-right: 8px;
+  transition: all 0.3s ease;
+  position: absolute;
+}
+
+.filter-option input:checked + label::before {
+  background-color: #D4AF37; /* Green when checked */
+  border-color: #D4AF37;
+}
+
+.filter-option input:checked + label {
+  background-color: #D4AF37; /* Green when checked */
+  color: #FFFFFF;
+}
+
+/* Ensure that when checked, no blue background appears */
+.filter-option input:checked + label::after {
+  content: '\2713'; /* Unicode for checkmark */
+  position: absolute;
+  font-size: 14px;
+  color: white; /* Checkmark color */
+  top: 50%;
+  left: 3px;
+  transform: translateY(-50%);
+}
+
+input[type="checkbox"] {
+accent-color: #006B6B;
+}
+</style>

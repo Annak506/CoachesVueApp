@@ -105,15 +105,33 @@ this.activeFilters = updatedFilters;
 </script>
 
 
-<style>
+<style scoped>
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 .controls {
   display: flex;
   justify-content: space-between;
+  background-color: #F8F1EB; /* Light Gray */
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.controls button {
+  background-color: #006B6B; /* Teal */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.controls button:hover {
+  background-color: #004747; /* Darker Teal */
 }
 </style>

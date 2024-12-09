@@ -28,15 +28,14 @@ export default{
     }
 }
 </script>
-
 <style scoped>
 button,
 a {
   text-decoration: none;
   padding: 0.75rem 1.5rem;
   font: inherit;
-  background-color: #3a0061;
-  border: 1px solid #3a0061;
+  background-color: #006B6B; /* Teal */
+  border: 1px solid #006B6B;
   color: white;
   cursor: pointer;
   border-radius: 30px;
@@ -48,26 +47,26 @@ a:hover,
 a:active,
 button:hover,
 button:active {
-  background-color: #270041;
-  border-color: #270041;
+  background-color: #004747; /* Darker Teal */
+  border-color: #004747;
 }
 
 .flat {
   background-color: transparent;
-  color: #3a0061;
+  color: #006B6B;
   border: none;
 }
 
 .outline {
   background-color: transparent;
-  border-color: #270041;
-  color: #270041;
+  border-color: #004747;
+  color: #004747;
 }
 
 .flat:hover,
 .flat:active,
 .outline:hover,
 .outline:active {
-  background-color: #edd2ff;
+  background-color: #E0F8F8; /* Light Teal */
 }
 </style>

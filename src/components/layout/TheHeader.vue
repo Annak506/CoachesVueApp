@@ -1,83 +1,67 @@
 <template>
-    <div>
+  <div>
     <header>
-        <nav>
-            <h1><router-link to="/">Find a Coach</router-link></h1>
-            <ul>
-                <li><router-link to="/coaches">All Coaches</router-link></li>
-                <li v-if="isLoggedIn"><router-link to="/requests">Requests</router-link></li>
-                <li v-else><router-link to="/auth">Login</router-link></li>
-              <li v-if="isLoggedIn">
-                <base-button @click="logout">Logout</base-button>
-              </li>
-              </ul>
-        </nav>
+      <nav>
+        <h1><router-link to="/">Find a Coach</router-link></h1>
+        <ul>
+          <li><router-link to="/coaches">All Coaches</router-link></li>
+          <li v-if="isLoggedIn"><router-link to="/requests">Requests</router-link></li>
+          <li v-else><router-link to="/auth">Login</router-link></li>
+          <li v-if="isLoggedIn">
+            <base-button @click="logout">Logout</base-button>
+          </li>
+        </ul>
+      </nav>
     </header>
-    </div>
+  </div>
 </template>
 
 <script>
-export default{
-  computed:{
-    isLoggedIn(){
+export default {
+  computed: {
+    isLoggedIn() {
       return this.$store.getters.isAuthenticated;
-    }
+    },
   },
-  methods:{
-    logout(){
+  methods: {
+    logout() {
       this.$store.dispatch('logout');
       this.$router.replace('/auth');
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 
-<style scoped>
+<style>
 header {
   width: 100%;
-  height: 5rem;
-  background-color: #3d008d;
+  height: 6rem;
+  background-color: #F8F1EB;
+  border-bottom: 2px solid #baab79;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-header a {
-  text-decoration: none;
-  color: #f391e3;
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  border: 1px solid transparent;
-}
-
-a:active,
-a:hover,
-a.router-link-active {
-  border: 1px solid #f391e3;
-}
-
-h1 {
-  margin: 0;
-}
-
-h1 a {
-  color: white;
-  margin: 0;
-}
-
-h1 a:hover,
-h1 a:active,
-h1 a.router-link-active {
-  border-color: transparent;
-}
-
 header nav {
   width: 90%;
-  margin: auto;
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+h1 a {
+  text-decoration: none;
+  color: #796521;
+  font-weight: bold;
+  font-size: 2rem;
+  transition: color 0.3s ease-in-out;
+}
+
+h1 a:hover {
+  color: #250b2a;
 }
 
 header ul {
@@ -87,9 +71,31 @@ header ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.rem;
 }
 
 li {
-  margin: 0 0.5rem;
+  margin: 0 1rem;
+}
+
+header a {
+  text-decoration: none;
+  color: #7b6d40;
+  font-family: 'Lora', serif;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease-in-out;
+  border-radius: 16px;
+  
+}
+
+header a:hover {
+  color: #FFFFFF;
+  background-color: #D4AF37;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header a.router-link-active {
+  color: #7b6d40;
+  font-weight: bold;
 }
 </style>

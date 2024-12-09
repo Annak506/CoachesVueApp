@@ -27,30 +27,54 @@ export default {
         }
 }}
 </script>
-
 <style scoped>
 li {
-  margin: 1rem 0;
-  border: 1px solid #424242;
-  border-radius: 12px;
-  padding: 1rem;
+  margin: 1.5rem 0;
+  border: 1px solid #D4AF37;
+  border-radius: 16px;
+  padding: 1.5rem;
+  background: linear-gradient(145deg, #F8F1EB, #FFFFFF);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  font-family: 'Playfair Display', serif;
+  color: #333;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
 }
 
-h3,
 h4 {
-  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: #777;
+  font-family: 'Open Sans', sans-serif;
 }
 
 div {
   margin: 0.5rem 0;
 }
 
+.base-badge {
+  background-color: #D4AF37;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 0.4rem 0.8rem;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 0.5rem 0.5rem 0;
+  display: inline-block;
+}
+
 .actions {
   display: flex;
   justify-content: flex-end;
+  gap: 1rem;
 }
 </style>
