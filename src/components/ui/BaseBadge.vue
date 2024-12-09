@@ -40,4 +40,11 @@ export default {
       background-color: #6B8E23; 
       color: white;
     }
+
+    @media (max-width: 768px) {
+    .badge {
+      padding: 0.25rem 0.75rem; 
+      font-size: 0.875rem; 
+    }
+  }
 </style>
