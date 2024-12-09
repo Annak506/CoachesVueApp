@@ -98,8 +98,6 @@ header a.router-link-active {
   color: #7b6d40;
   font-weight: bold;
 }
-
-
 @media (max-width: 768px) {
   header {
     height: 5rem;
