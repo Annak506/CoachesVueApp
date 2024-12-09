@@ -34,7 +34,7 @@ a {
   text-decoration: none;
   padding: 0.75rem 1.5rem;
   font: inherit;
-  background-color: #006B6B; /* Teal */
+  background-color: #006B6B; 
   border: 1px solid #006B6B;
   color: white;
   cursor: pointer;
@@ -47,7 +47,7 @@ a:hover,
 a:active,
 button:hover,
 button:active {
-  background-color: #004747; /* Darker Teal */
+  background-color: #004747; 
   border-color: #004747;
 }
 
@@ -67,6 +67,6 @@ button:active {
 .flat:active,
 .outline:hover,
 .outline:active {
-  background-color: #E0F8F8; /* Light Teal */
+  background-color: #E0F8F8; 
 }
 </style>

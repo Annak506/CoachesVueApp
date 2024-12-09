@@ -68,7 +68,7 @@ dialog {
   z-index: 100;
   border-radius: 12px;
   border: none;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Lighter Shadow */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); 
   padding: 0;
   margin: 0;
   overflow: hidden;
@@ -76,7 +76,7 @@ dialog {
 }
 
 header {
-  background-color: #2E8B57; /* Sea Green */
+  background-color: #2E8B57; 
   color: white;
   width: 100%;
   padding: 1rem;

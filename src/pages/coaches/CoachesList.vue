@@ -116,14 +116,14 @@ ul {
 .controls {
   display: flex;
   justify-content: space-between;
-  background-color: #F8F1EB; /* Light Gray */
+  background-color: #F8F1EB; 
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
   margin-bottom: 1rem;
 }
 
 .controls button {
-  background-color: #006B6B; /* Teal */
+  background-color: #006B6B; 
   color: white;
   border: none;
   padding: 0.5rem 1rem;
@@ -132,6 +132,6 @@ ul {
 }
 
 .controls button:hover {
-  background-color: #004747; /* Darker Teal */
+  background-color: #004747; 
 }
 </style>

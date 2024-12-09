@@ -55,11 +55,10 @@ h2 {
   display: inline-block;
   margin-right: 1.5rem;
   font-family: 'Open Sans', sans-serif;
-  position: relative; /* To position the custom checkbox */
+  position: relative; 
 }
 
 .filter-option input {
-  /* Hide the default checkbox entirely */
   display: none;
 }
 
@@ -78,7 +77,7 @@ h2 {
 }
 
 .filter-option label::before {
-  content: ''; /* Empty content for the custom checkbox */
+  content: ''; 
   width: 16px;
   height: 16px;
   border: 2px solid #D4AF37;
@@ -90,21 +89,21 @@ h2 {
 }
 
 .filter-option input:checked + label::before {
-  background-color: #D4AF37; /* Green when checked */
+  background-color: #D4AF37; 
   border-color: #D4AF37;
 }
 
 .filter-option input:checked + label {
-  background-color: #D4AF37; /* Green when checked */
+  background-color: #D4AF37; 
   color: #FFFFFF;
 }
 
-/* Ensure that when checked, no blue background appears */
+
 .filter-option input:checked + label::after {
-  content: '\2713'; /* Unicode for checkmark */
+  content: '\2713'; 
   position: absolute;
   font-size: 14px;
-  color: white; /* Checkmark color */
+  color: white; 
   top: 50%;
   left: 3px;
   transform: translateY(-50%);

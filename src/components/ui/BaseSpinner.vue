@@ -38,7 +38,7 @@
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    background: #006B6B; /* Teal */
+    background: #006B6B; 
     margin: -4px 0 0 -4px;
   }
   @keyframes lds-roller {

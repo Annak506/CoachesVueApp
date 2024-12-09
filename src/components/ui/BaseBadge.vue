@@ -18,7 +18,7 @@ export default {
 
 <style scoped>
     .badge {
-      background-color: #B0E0E6; /* Light Blue */
+      background-color: #B0E0E6; 
       color: #252525;
       border-radius: 30px;
       padding: 0.5rem 1.5rem;
@@ -27,17 +27,17 @@ export default {
     }
 
     .frontend {
-      background-color: #006B6B; /* Teal */
+      background-color: #006B6B; 
       color: white;
     }
 
     .backend {
-      background-color: #2E8B57; /* Sea Green */
+      background-color: #2E8B57; 
       color: white;
     }
 
     .career {
-      background-color: #6B8E23; /* Olive Green */
+      background-color: #6B8E23; 
       color: white;
     }
 </style>
