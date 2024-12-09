@@ -44,7 +44,7 @@ export default {
     @media (max-width: 768px) {
     .badge {
       padding: 0.25rem 0.75rem; 
-      font-size: 0.875rem; 
+      font-size: 0.94rem; 
     }
   }
 </style>
