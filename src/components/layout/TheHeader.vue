@@ -104,11 +104,11 @@ header a.router-link-active {
   }
 
   h1 a {
-    font-size: 1.3rem; 
+    font-size: 1.1rem; 
   }
 
   header ul {
-    font-size: 0.875rem;
+    font-size: 0.7rem;
   }
 
  
